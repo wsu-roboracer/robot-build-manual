@@ -1,0 +1,21 @@
+site_name: "Robot Build Manual"
+site_description: "Hardware build and bring-up manual: mechanical, electrical, setup, troubleshooting"
+nav:
+  - Home: index.md
+  - Mechanical assembly:
+      - Overview: "mechanical-assembly/index.md"
+  - Electrical and wiring:
+      - Overview: "electrical-and-wiring/index.md"
+  - Software setup and flashing:
+      - Overview: "software-setup-and-flashing/index.md"
+  - Bring-up and first run:
+      - Overview: "bring-up-and-first-run/index.md"
+  - Troubleshooting:
+      - Overview: "troubleshooting/index.md"
+  - Parts and suppliers:
+      - Overview: "parts-and-suppliers/index.md"
+theme:
+  name: material
+markdown_extensions:
+  - toc:
+      permalink: true
