@@ -1,7 +1,7 @@
 ---
-sort: 5
+sort: 8
 ---
 
-# Electrical
+# Changelogs
 
 {% include list.liquid all=true %}

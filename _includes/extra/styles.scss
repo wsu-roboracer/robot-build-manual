@@ -1,0 +1,158 @@
+.header {
+    color: #fff;
+    background: #000000;
+
+    background-image:url('/turtlebot4-user-manual/media/turtlebot4_logo.png');
+    background-size: 174px 60px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 5px;
+    display: inline-block;
+    
+    height: 140px;
+    content:"";
+}
+
+.title a {
+    position: relative;
+    top: 45px;
+}
+
+a img {
+    border: 0;
+    outline: none;
+}
+
+.header input{
+    position: relative;
+    top: 45px;
+}
+
+.header-bar-wrap {
+    background: #000000;
+    position: relative;
+    min-height: 140px;
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+}
+
+.header-row {
+    display: inline-block;
+    align-items: center;
+    margin-top: 35px;
+    height: 100%;
+}
+
+.header-row::after {
+    content: "";
+    clear: both;
+    display: grid;
+}
+
+.header-logo {
+    background: #000000;
+    outline: #000000;
+    color:#000000;
+
+    display: inline-block;
+    
+    background-size: 95% 95%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.header-ul {
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.cpr-logo{
+    background-image:url('/turtlebot4-user-manual/media/cpr_logo.png');
+    width: 355px;
+    height: 40px;
+}
+
+.osrf-logo{
+    background-image:url('/turtlebot4-user-manual/media/openrobotics-logo-REV.png');
+    height: 40px;
+    width: 146px;
+}
+
+.ros-logo{
+    background-image:url('/turtlebot4-user-manual/media/ros_logo.png');
+    height: 40px;
+    width: 160px;
+}
+
+.lessons-logo{
+    background-image:url('/turtlebot4-user-manual/media/lessons.png');
+    height: 40px;
+    width: 40px;
+}
+
+.github-logo{
+    background-image:url('/turtlebot4-user-manual/media/github_logo.png');
+    height: 40px;
+    width: 40px;
+}
+
+.shop-logo{
+    background-image:url('/turtlebot4-user-manual/media/shop.jpg');
+    height: 40px;
+    width: 47px;
+}
+
+// Remove Home icon
+.fa-home::before{
+    content: "";
+}
+
+// Remove plus icon
+.fa-plus-square-o:before{
+    content: "";
+}
+
+// Change caption font color in table of contents
+.toctree .caption {
+    color: #ffcd00;
+}
+
+figure {
+    padding: 4px;
+    margin: auto;
+  }
+
+figcaption {
+    background-color: white;
+    color: black;
+    font-style: italic;
+    font-size: small;
+    padding: 2px;
+    text-align: center;
+  }
+
+.aligncenter {
+    text-align: center;
+}
+
+td{
+    text-align: left;
+    vertical-align: middle;
+}
+
+.center-table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.markdown-body ul {
+    padding-left: 1em;
+}
