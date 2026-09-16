@@ -1,7 +1,6 @@
----
-sort: 5
----
+.. _doc_electrical_and_wiring:
 
-# Electrical
+Electrical and wiring
+=====================
 
-{% include list.liquid all=true %}
+Placeholder for wiring diagrams, pinouts, and safety notes.
