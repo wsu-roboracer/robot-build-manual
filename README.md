@@ -2,20 +2,21 @@
 
 Hardware build and bring-up manual: mechanical, electrical, setup, troubleshooting.
 
+The site is built with [Sphinx](https://www.sphinx-doc.org/) (reStructuredText, Read the Docs theme) and deployed to GitHub Pages by `.github/workflows/pages.yml` on every push to `main`.
+
 ---
 
 ## Windows quickstart (copy/paste)
 
 Prerequisites
 - Git (in PATH)
-- Python 3.8+ (in PATH)
+- Python 3.11 (in PATH) â€” the pinned versions in `docs/requirements.txt` match CI
 - PowerShell
 
-Clone and switch to the scaffold branch:
+Clone:
 ```powershell
 git clone https://github.com/wsu-roboracer/robot-build-manual.git
 cd robot-build-manual
-git checkout site_skeleton
 ```
 
 Create and activate a virtual environment (PowerShell):
@@ -26,40 +27,25 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 ```
 
-Install MkDocs and the Material theme:
+Install Sphinx and the theme:
 ```powershell
 python -m pip install --upgrade pip
-pip install mkdocs mkdocs-material
+pip install -r docs/requirements.txt
 ```
 
-Quick checks:
+Build the site (same command CI runs):
 ```powershell
-mkdocs --version            # prints MkDocs version
-Test-Path mkdocs.yml        # should be True (mkdocs.yml must be at repo root)
-Get-ChildItem docs -Directory
+sphinx-build -b html docs docs/build/html
 ```
+Open `docs/build/html/index.html` in your browser.
 
-Live preview (hot reload):
+Or, from the `docs` folder:
 ```powershell
-mkdocs serve
-```
-Open http://127.0.0.1:8000 in your browser.
-
-Build static site:
-```powershell
-mkdocs build
-```
-The output is in `./site/`.
-
-Commit and push changes:
-```powershell
-git add mkdocs.yml docs README.md
-git commit -m "Update docs site content"
-git push origin site_skeleton
+cd docs
+.\make.bat html      # output in docs/_build/html
 ```
 
-Acceptance test — run from a clean clone:
-Start in an empty folder and run the steps above. Expected results:
-- `mkdocs --version` prints a version.
-- `mkdocs serve` serves the site at `http://127.0.0.1:8000` and pages load.
-- `mkdocs build` creates `site/index.html`.
+## Adding pages
+
+- Pages are `.rst` files under `docs/`, one folder per section (`docs/<section>/index.rst`).
+- Add new pages to a `toctree` in `docs/index.rst` (or in the section's `index.rst`) so they appear in the sidebar.

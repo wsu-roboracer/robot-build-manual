@@ -1,0 +1,9 @@
+_build/
+__pycache__
+.DS_Store
+*.pyc
+.vscode/
+.claude/settings.local.json
+.vs/
+build/
+.venv/
