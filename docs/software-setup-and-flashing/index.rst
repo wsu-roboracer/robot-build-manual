@@ -1,6 +1,9 @@
-.. _doc_software_setup_and_flashing:
-
-Software setup and flashing
+Software Setup and Flashing
 ===========================
 
-Placeholder for OS/toolchain, flashing steps, and firmware validation.
+.. toctree::
+   :maxdepth: 2
+
+   Firmware/index
+   Software/index
+   appendix/index

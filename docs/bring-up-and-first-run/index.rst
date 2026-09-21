@@ -1,6 +1,38 @@
-.. _doc_bring_up_and_first_run:
+.. _doc_drive:
 
-Bring-up and first run
-======================
+Driving the RoboRacer Car
+=========================
 
-Placeholder for first-power checks, calibration, and initial tests.
+.. note:: This section assumes that you have already completed :ref:`Building the Car <doc_build_car>`, :ref:`System Configuration <doc_software_setup>`, and :ref:`Installing Driver Stack <doc_build_car_firmware>`.
+
+| Vehicle built? ✓ System configured? ✓ Driver Stack installed? ✓
+| Time to finally learn how to drive!!
+
+
+**Required Equipment:**
+	* Fully built RoboRacer vehicle
+	* Pit/Host computer
+	* Logitech F710 joypad
+
+**Difficulty Level:** Intermediate
+
+**Approximate Time Investment:** 2 hours
+
+First, we need to set up the :ref:`driver stack <doc_drive_workspace>` on the car and then we'll learn how to :ref:`control the car <drive_manualcontrol>` with a joystick.
+
+.. toctree::
+   :maxdepth: 1
+   :name: Driving Setup
+   :hidden:
+
+   drive_manual
+   drive_calib_odom
+   drive_autonomous
+
+
+#. :ref:`Manual Control <drive_manualcontrol>` goes over how to start driving the car with a joystick once the workspace has been setup.
+#. :ref:`Odometry Calibration <doc_calib_odom>` goes over how to calibrate the odometry of the vehicle
+#. :ref:`Autonomous Control <doc_drive_autonomous>` goes over how to drive autonomously with the car.
+
+.. tip::
+  If you have any build and/or setup questions, post to the `RoboRacer Slack <https://join.slack.com/t/robo-racer/shared_invite/zt-42lsbf50y-_3YPNLl_d3s~wPylAOMg0g>`_.
