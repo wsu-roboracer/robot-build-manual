@@ -19,27 +19,27 @@ How this differs from the course site
 
 .. toctree::
    :maxdepth: 1
+   :caption: Get Started
+
+   Parts and Suppliers <parts-and-suppliers/index>
+
+.. toctree::
+   :maxdepth: 1
    :caption: Build
-   :name: sec-build
-   :hidden:
 
-   mechanical-assembly/index
-   electrical-and-wiring/index
-   software-setup-and-flashing/index
+   Mechanical Assembly <mechanical-assembly/index>
+   Electrical and Wiring <electrical-and-wiring/index>
+   Software Setup and Flashing <software-setup-and-flashing/index>
 
 .. toctree::
    :maxdepth: 1
-   :caption: Bring-up
-   :name: sec-bring-up
-   :hidden:
+   :caption: Drive
 
-   bring-up-and-first-run/index
-   troubleshooting/index
+   Bring-up and First Run <bring-up-and-first-run/index>
 
 .. toctree::
    :maxdepth: 1
-   :caption: Reference
-   :name: sec-reference
-   :hidden:
+   :caption: Help
 
-   parts-and-suppliers/index
+   Troubleshooting <troubleshooting/index>
+

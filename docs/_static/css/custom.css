@@ -1,1 +1,46 @@
-/* Custom CSS for Robot Build Manual */
+/* Sidebar toggle button */
+#sidebar-toggle {
+    position: fixed;
+    top: 15px;
+    left: 285px;
+    z-index: 99999;
+    width: 40px;
+    height: 40px;
+    background: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0;
+}
+
+    /* Three horizontal lines */
+    #sidebar-toggle::before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 12px;
+        width: 20px;
+        height: 2px;
+        background: white;
+        box-shadow: 0 7px 0 white, 0 14px 0 white;
+    }
+
+/* Hide sidebar */
+body.sidebar-collapsed .wy-nav-side {
+    display: none;
+}
+
+/* Expand content */
+body.sidebar-collapsed .wy-nav-content-wrap {
+    margin-left: 0;
+}
+
+body.sidebar-collapsed .wy-nav-content {
+    max-width: none;
+}
+
+/* Move button to left edge when sidebar is hidden */
+body.sidebar-collapsed #sidebar-toggle {
+    left: 15px;
+}
