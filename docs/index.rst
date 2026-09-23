@@ -43,3 +43,8 @@ How this differs from the course site
 
    Troubleshooting <troubleshooting/index>
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Course Site
+
+   Course Site <course-site/index>

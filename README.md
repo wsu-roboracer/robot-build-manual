@@ -6,6 +6,10 @@ The site is built with [Sphinx](https://www.sphinx-doc.org/) (reStructuredText, 
 
 ---
 
+## Live Site
+
+[Robot Build Manual](https://wsu-roboracer.github.io/robot-build-manual/)
+
 ## Windows quickstart (copy/paste)
 
 Prerequisites
