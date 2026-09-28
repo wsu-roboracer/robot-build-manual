@@ -33,6 +33,12 @@ How this differs from the course site
 
 .. toctree::
    :maxdepth: 1
+   :caption: Nav2 Setup
+
+   Nav2 Setup <nav2-setup/index>
+
+.. toctree::
+   :maxdepth: 1
    :caption: Drive
 
    Bring-up and First Run <bring-up-and-first-run/index>
