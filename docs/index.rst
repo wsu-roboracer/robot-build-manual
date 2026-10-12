@@ -45,6 +45,18 @@ How this differs from the course site
 
 .. toctree::
    :maxdepth: 1
+   :caption: Commissioning
+
+   Commissioning <commissioning/index>
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Diagnostics
+
+   Diagnostics <diagnostics/index>
+
+.. toctree::
+   :maxdepth: 1
    :caption: Help
 
    Troubleshooting <troubleshooting/index>
