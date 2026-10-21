@@ -54,6 +54,13 @@ How this differs from the course site
    :caption: Diagnostics
 
    Diagnostics <diagnostics/index>
+   Guides <guides/index>
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Design
+
+   Design <design/index>
 
 .. toctree::
    :maxdepth: 1
