@@ -64,6 +64,12 @@ How this differs from the course site
 
 .. toctree::
    :maxdepth: 1
+   :caption: Steam Deck Setup
+
+   Steam Deck Setup <steam-deck/index>
+
+.. toctree::
+   :maxdepth: 1
    :caption: Help
 
    Troubleshooting <troubleshooting/index>
